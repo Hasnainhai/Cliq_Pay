@@ -1,5 +1,6 @@
-import 'package:cliq_pay/view/auth/onboarding/splash_screen.dart';
+import 'package:cliq_pay/routes/routes_name.dart';
 import 'package:flutter/material.dart';
+import 'routes/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      initialRoute: RoutesName.splashScreen,
+      onGenerateRoute: Routes.generateRoute,
     );
   }
 }

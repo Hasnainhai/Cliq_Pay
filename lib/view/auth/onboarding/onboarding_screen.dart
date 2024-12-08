@@ -1,5 +1,6 @@
 import 'package:cliq_pay/res/components/rounded_button.dart';
 import 'package:cliq_pay/res/components/unfill_rounded_button.dart';
+import 'package:cliq_pay/routes/routes_name.dart';
 import 'package:cliq_pay/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -73,13 +74,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               const Gap(24),
               RoundedButton(
                 title: 'Log In',
-                onpress: () {},
+                onpress: () {
+                  Navigator.pushNamed(context, RoutesName.login);
+                },
                 color: AppColor.primaryColor,
               ),
               const Gap(16),
               RoundedButton2(
                 title: 'Sign Up',
-                onpress: () {},
+                onpress: () {
+                  Navigator.pushNamed(context, RoutesName.signUp);
+                },
                 color: AppColor.primaryColor,
               ),
             ],

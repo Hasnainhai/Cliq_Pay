@@ -1,4 +1,6 @@
+import 'package:cliq_pay/view/auth/login/login_screen.dart';
 import 'package:cliq_pay/view/auth/onboarding/onboarding_screen.dart';
+import 'package:cliq_pay/view/auth/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../view/auth/onboarding/splash_screen.dart';
@@ -14,6 +16,14 @@ class Routes {
       case RoutesName.onboarding:
         return MaterialPageRoute(
           builder: (BuildContext context) => const OnboardingScreen(),
+        );
+      case RoutesName.login:
+        return MaterialPageRoute(
+          builder: (BuildContext context) => const LoginScreen(),
+        );
+      case RoutesName.signUp:
+        return MaterialPageRoute(
+          builder: (BuildContext context) => const SignupScreen(),
         );
 
       default:
