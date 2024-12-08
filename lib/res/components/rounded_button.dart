@@ -24,7 +24,14 @@ class RoundedButton extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100.0),
-          color: color,
+          gradient: const LinearGradient(
+            colors: [
+              Color(0xFF1EDED7),
+              Color(0xFF548FE1),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
         ),
         child: Center(
           child: loading
