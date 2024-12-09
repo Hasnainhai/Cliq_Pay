@@ -92,7 +92,7 @@ class SignupScreen extends StatelessWidget {
                   ),
                   const Gap(46),
                   RoundedButton(
-                      title: 'Login',
+                      title: 'Sign Up',
                       onpress: () {},
                       color: AppColor.primaryColor),
                   const Gap(10),

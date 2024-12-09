@@ -27,11 +27,11 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SafeArea(
         child: Center(
           child: Container(
-            height: 97,
+            height: 300,
             width: 292,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("images/logo.png"),
+                image: AssetImage("images/Logo1.png"),
                 fit: BoxFit.cover,
               ),
             ),
